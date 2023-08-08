@@ -1,0 +1,101 @@
+body {
+  background-color: #352f5b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+}
+
+.main {
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+.header h1 {
+  padding: 0.1em 0.5em;
+}
+
+.header input {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.header form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.add_item {
+  height: 100px;
+  padding-left: 2em;
+}
+
+.add_item form {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.add_item input[type=text] {
+  width: 60%;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.add_item input[type=button] {
+  width: 20%;
+  color: #ffffff;
+	background-color: #352f5b;
+	font-size: 19px;
+	border: 2px solid white;
+	cursor: pointer
+}
+
+.add_item input[type=button]:hover {
+	background-color: #423a6f;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul li input {
+  margin-right: 15px;
+  width: 25px;
+  height: 25px;
+}
+
+ul li {
+  color: white;
+  font-size: xlarge;
+  background-color: #423a6f;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 100px;
+  width: 20px;
+  background-color: red;
+  color: red;
+}

@@ -1,0 +1,37 @@
+li { list-style-type: square }
+
+#cena {
+    font-weight: bold;
+    color: red;
+}
+
+.wstep {
+    font-style: italic;
+}
+
+td img {
+    height: 400px;
+    border: 2px solid blue;
+}
+
+td img:hover {
+    border: 2px solid red;
+}
+
+h1 + h2 {
+    letter-spacing: 5px;
+}
+
+td[colspan="2"] p {
+    font-size: small;
+}
+
+p + p {
+    color: gray;
+}
+
+body {
+    background-size: 7em;
+    background-image: url(https://as2.ftcdn.net/v2/jpg/00/65/70/77/1000_F_65707740_9dy3kO5vd8NsuoN1vAmVuTHr82DvCUvB.jpg) ;
+    background-repeat: repeat-y;
+}

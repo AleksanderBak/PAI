@@ -1,0 +1,21 @@
+1. Do czego służą poszczególne warstwy architektury MVC i jak są połączone?
+- Models służą do zarządzania danymi. Views odpowiadają za wyświetlanie danych/UI. Controllers obsługują żądania i odpowiadają na nie. Połączone są ze sobą w taki sposób, aby cykl korzystania z aplikacji był następujący: Użytkownik poprzez View wysyła żądanie do Controllera, który pobiera dane z Modelu i przekazuje je do View który wyświetla wynik żądania.
+
+2. Jakie są konwencję nazewnictwa dla: (i) modeli, (ii) kontrolerów, (iii) akcji kontrolera, (iv)
+widoków, (v) folderów widoków?
+- i, iv -> rzeczownik pisany wielką literą np. Movie.cs
+ii -> rzeczownik zakończony sufiksem Controller np. MoviesController.cs
+v -> folder widoków powininen mieć nazwę taką samą jak kontroler obsługujący widoki znajdujące się w folderze.
+
+3. Jak dane przekazywane są z kontrolerów do widoków (podaj 2 opcje)?
+- Poprzez model przekazany do widoku oraz przez właściwość ViewData.
+
+4. Jak mapowane są URLs na akcje kontrolerów?
+- Akcje są mapowane przez router, którego ustawienia można odpowiednio skonfigurować.
+
+5. Jak ograniczać akcje kontrolera tak by były uruchamiane tylko z użyciem wskazanych typów
+zapytań HTTP (np. ograniczenie do HTTP POST)?
+- Można zdefiniować konkretny typ zapytania, podając go jako atrybut dla konkretnej akcji kontrolera w nawiasach kwadratowych np. [HttpPost]
+
+6. Gdzie zdefiniowana jest walidacja danych i jak realizowana jest w widokach i kontrolerach?
+- Walidacja danych może być zdefiniowana zarówno w widokach, kontrolerach, jak i w modelach. W widokach walidacja jest realizowana za pomocą odpowiednich atrybutów html oraz ich znaczników. W kontrolerach walidacja przebiega na podstawie zdefiniowanych przez programistę reguł przetwarzania danych pobranych z widoków.

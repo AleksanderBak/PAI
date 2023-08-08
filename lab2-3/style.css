@@ -1,0 +1,157 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+}
+
+header nav {
+    flex-grow: 2;
+    align-self: flex-start;
+    display: flex;
+    justify-content: right;
+}
+
+header nav a {
+    width: 75px;
+}
+
+#logo {
+    background-color: lightgray;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.title {
+    margin-left: 15px;
+    font-size: 2rem;
+}
+
+#burger {
+    display: block;
+    height: 75px;
+    width: 75px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+
+#burger hr {
+    color: black;
+    border: 1.5px solid black;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+main article {
+    margin: 15px;
+    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main article h5 {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    background-color: lightgray;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+main article p {
+    text-align: justify;
+    padding: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: lightgray;
+    border-top: 2px solid black;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(2) {
+    font-weight: bold;
+}
+
+@media all and (max-width: 900px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    #burger {
+        display: flex;
+    }
+}
